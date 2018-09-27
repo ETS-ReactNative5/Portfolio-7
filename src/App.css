@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+  margin-top: -1.7vh;
+}
+
+img{
+  width: 5vw;
+}
+
+/* #pic{
+  width: 100px;
+  height: 0.1px;
+} */
+
+.nav-style {
+  text-align: right;
+}
+
+a {
+  color: red;
+}
+
+.nav-style li {
+  list-style: none;
+  display: inline;
+  margin: 0 10px;
+}
+
+.nav-style a {
+  text-decoration: none;
+}
+
+.home {
+  background-image: url(/images/blackandwhitesanfran.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: rgb(255, 0, 0);
+}
+
+.home-content {
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 0, 0, 0.596);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.btn-hover.color-11 {
+  background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
+.buttons {
+  margin: 10%;
+  text-align: center;
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.about-content {
+  background: rgba(255, 0, 0, 0.76);;
+  color: white;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 200px;
+  border-radius: 50%;
+}
