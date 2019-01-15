@@ -1,99 +1,87 @@
 .App {
   text-align: center;
-  margin-top: -1.7vh;
+  margin-top: -2vh;
+  background-color: #252626;
+  min-height: 100vh;
+  color: rgb(204, 255, 211);
 }
 
-img{
-  width: 5vw;
+.nav-style > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
-
-/* #pic{
-  width: 100px;
-  height: 0.1px;
-} */
 
 .nav-style {
-  text-align: right;
-}
-
-a {
-  color: red;
-}
-
-.nav-style li {
-  list-style: none;
-  display: inline;
-  margin: 0 10px;
-}
-
-.nav-style a {
-  text-decoration: none;
+  width: 200px;
 }
 
 .home {
-  background-image: url(/images/blackandwhitesanfran.jpg);
-  background-size: cover;
-  height: 100vh;
-  color: rgb(255, 0, 0);
+  background-color: #252626;
 }
 
-.home-content {
-  color: rgb(255, 255, 255);
-  background-color: rgba(255, 0, 0, 0.596);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+/** --- TYPOGRAPHY --- **/
+
+h1 {
+	font-family: Helvetica;
+	font-size: 3em;
 }
 
-.btn-hover.color-11 {
-  background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
-}
+/** --- MENU STYLES --- **/
 
-.buttons {
-  margin: 10%;
-  text-align: center;
-}
-
-.btn-hover {
-  width: 200px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
+.block  {
+	display: table;
+	height: 70px;
+	width: 70px;
+	text-align: center;
   cursor: pointer;
-  margin: 20px;
-  height: 55px;
-  text-align:center;
-  border: none;
-  background-size: 300% 100%;
-
-  border-radius: 50px;
-  moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
 }
 
-.btn-hover:hover {
-  background-position: 100% 0;
-  moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+.block h1 {
+	display: table-cell;
+	vertical-align: middle;
 }
 
-.btn-hover:focus {
-  outline: none;
+.home-button {
+	background: #181818;
+	color: #56cd56;
+	transition: all 0.6s ease;
 }
 
-.about-content {
-  background: rgba(255, 0, 0, 0.76);;
-  color: white;
+.home-pic {
+  height: 7vh;
 }
 
-.avatar {
-  vertical-align: middle;
-  width: 150px;
-  height: 200px;
-  border-radius: 50%;
+.portfolio,
+.about,
+.contact {
+	background: #181818;
+	color: #abadb3;
+	transition: all 0.6s ease;
+}
+
+/** --- ANIMATIONS --- **/
+
+.home-button:hover {
+	background: #56cd56;
+	color: #d0e9fb;
+	border-left: solid 10px #d0fbd4;
+}
+
+.portfolio:hover,
+.about:hover,
+.contact:hover {
+	background: #abadb3;
+	color: #ebecee;
+	border-left: solid 10px #d0fbd4;
+}
+
+.navi {
+  background: #181818;
+  width: 70px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
 }
