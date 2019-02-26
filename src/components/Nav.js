@@ -4,17 +4,24 @@ const navi = () => {
 	return (
 		<div className="navi">
 			<div class="nav-wrapper">
-				<div class="block home-button">
-					<img class="home-pic" src="/images/07-512.png" alt=""/>
-				</div>
-				<div class="block portfolio">
-					<h1>P</h1>
+				<div class="block">
+					<button class="block home-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE"><img class="home-pic" src="/images/07-512.png" alt=""/></button>
 				</div>
 				<div class="block about">
-					<h1>A</h1>
+				<button class="block home-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE"><img class="home-pic" src="/images/aboutIcon.png" alt=""/></button>
+					{/* <h1>P</h1> */}
+				</div>
+				<div class="block skills">
+				<button class="block home-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE"><img class="home-pic" src="/images/skillsIcon.png" alt=""/></button>
+					{/* <h1>A</h1> */}
+				</div>
+				<div class="block myWork">
+				<button class="block home-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE"><img class="home-pic" src="/images/myWorkIcon.png" alt=""/></button>
+					{/* <h1>C</h1> */}
 				</div>
 				<div class="block contact">
-					<h1>C</h1>
+				<button class="block home-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE"><img class="home-pic" src="/images/whiteMailIcon.png" alt=""/></button>
+					{/* <h1>C</h1> */}
 				</div>
 			</div>
 		</div>

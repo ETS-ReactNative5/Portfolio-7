@@ -34,7 +34,8 @@ h1 {
 	height: 70px;
 	width: 70px;
 	text-align: center;
-  cursor: pointer;
+	cursor: pointer;
+	transition: all 0.6s ease;
 }
 
 .block h1 {
@@ -49,11 +50,12 @@ h1 {
 }
 
 .home-pic {
-  height: 7vh;
+  height: 5vh;
 }
 
-.portfolio,
 .about,
+.skills,
+.myWork,
 .contact {
 	background: #181818;
 	color: #abadb3;
@@ -62,14 +64,16 @@ h1 {
 
 /** --- ANIMATIONS --- **/
 
-.home-button:hover {
-	background: #56cd56;
+.block:hover {
+	/* background: #c8ffdf; */
 	color: #d0e9fb;
 	border-left: solid 10px #d0fbd4;
 }
 
-.portfolio:hover,
+.home-button:hover,
 .about:hover,
+.skills:hover,
+.myWork:hover,
 .contact:hover {
 	background: #abadb3;
 	color: #ebecee;
@@ -85,3 +89,13 @@ h1 {
   z-index: 3;
   min-height: 500px;
 }
+
+/* .button:hover img,
+.button:active img {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+} */
