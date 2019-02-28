@@ -35,18 +35,24 @@ h1 {
 	width: 70px;
 	text-align: center;
 	cursor: pointer;
-	transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  border-style: none;
 }
 
-.block h1 {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-.home-button {
+.home-button,
+.about-button,
+.skills-button,
+.myWork-button,
+.contact-button
+ {
 	background: #181818;
 	color: #56cd56;
 	transition: all 0.6s ease;
+}
+
+.headshot {
+  width: 4vw;
+  margin-bottom: 10vw;
 }
 
 .home-pic {
@@ -65,19 +71,23 @@ h1 {
 /** --- ANIMATIONS --- **/
 
 .block:hover {
-	/* background: #c8ffdf; */
 	color: #d0e9fb;
 	border-left: solid 10px #d0fbd4;
 }
 
-.home-button:hover,
-.about:hover,
-.skills:hover,
-.myWork:hover,
-.contact:hover {
-	background: #abadb3;
+.home-button:hover {
+  background: #7a7a7a;
 	color: #ebecee;
 	border-left: solid 10px #d0fbd4;
+}
+
+.about-button:hover,
+.skills-button:hover,
+.myWork-button:hover,
+.contact-button:hover {
+	background: #7ed957;
+	color: #ebecee;
+  border-left: solid 10px #d0fbd4;
 }
 
 .navi {
@@ -90,12 +100,14 @@ h1 {
   min-height: 500px;
 }
 
-/* .button:hover img,
-.button:active img {
-    opacity: 0;
-    -webkit-transform: scale(0.3);
-    -moz-transform: scale(0.3);
-    -ms-transform: scale(0.3);
-    -o-transform: scale(0.3);
-    transform: scale(0.3);
-} */
+.socialMediaIconsDiv {
+  padding-top: 5vw;
+}
+
+.socialMediaIcons {
+  width: 3vw;
+}
+
+.gitHubIcons {
+  width: 2.6vw;
+}
