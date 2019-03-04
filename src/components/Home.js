@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import  Navi from './Nav';
 import '../App.css';
+// import sample from './sample.mp4';
 
-const home = () => {
-  return (
-    <div className="home">
-      <Navi />
-      <div className="home-content">
-        <h3>Welcome to my portfolio page! My name is</h3>
-        <h1>Joshua Matos</h1>
-        <p>and I'm Web Developer!</p>
+class home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  
+
+  
+  render() {
+    return (
+      <div className="home">
+        <Navi />
+        <div className="home-content">
+        <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
-
 export default home;
