@@ -131,19 +131,25 @@ class home extends Component {
             <div class="sk-cube3 sk-cube"></div>
           </div>
 
+        
           <h1 class="ml16">CONTACT ME</h1>
 
           <h1 class="ml8">
             <span class="letters-container">
 
+          <Link to = "/contact">
             <span class="letters letters-left"><img className="msgme" src="/images/whiteMailIcon.png" alt=""/></span>
+          </Link>
             <span class="letters bang">!</span>
             
             </span>
+        <Link to = "/contact">
             <span class="circle circle-white"></span>
             <span class="circle circle-dark"></span>
+        </Link>
             <span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
           </h1>
+
 
         </div>
 
