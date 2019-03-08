@@ -8,7 +8,7 @@ import $ from "jquery";
 import anime from '../../node_modules/animejs/lib/anime.es.js';
 
 
-class about extends Component {
+class myWork extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -18,13 +18,13 @@ class about extends Component {
 
   render() {
     return (
-    <div className="about">
-      
-      <h1 className="about-header">About me</h1>
+    <div className="myWork">
+    
+      <h1 className="myWork-header">myWork</h1>
     
     </div>
     )
   }
 }
 
-export default about;
+export default myWork;

@@ -80,7 +80,7 @@ class home extends Component {
         opacity: 0,
         duration: 1000,
         easing: "easeOutExpo",
-        delay: 1400
+        delay: 2800
       });
 
     anime({
@@ -90,6 +90,26 @@ class home extends Component {
       easing: "linear",
       loop: true
     });
+
+    // Wrap every letter in a span
+    $('.ml16').each(function(){
+      $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    });
+
+    anime.timeline({loop: true})
+      .add({
+        targets: '.ml16 .letter',
+        translateY: [-100,0],
+        easing: "easeOutExpo",
+        duration: 1400,
+        delay: 3700
+      }).add({
+        targets: '.ml16',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 3400
+      });
 
     
   }
@@ -111,10 +131,14 @@ class home extends Component {
             <div class="sk-cube3 sk-cube"></div>
           </div>
 
+          <h1 class="ml16">CONTACT ME</h1>
+
           <h1 class="ml8">
             <span class="letters-container">
-              <span class="letters letters-left"><img className="msgme" src="/images/whiteMailIcon.png" alt=""/></span>
-              <span class="letters bang">!</span>
+
+            <span class="letters letters-left"><img className="msgme" src="/images/whiteMailIcon.png" alt=""/></span>
+            <span class="letters bang">!</span>
+            
             </span>
             <span class="circle circle-white"></span>
             <span class="circle circle-dark"></span>

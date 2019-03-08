@@ -1,31 +1,65 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { findDOMNode } from 'react-dom';
+import { Link } from 'react-router-dom';
 
-const navi = () => {
-	return (
-		<div className="navi">
-			<div class="nav-wrapper">
-				<div>
-					<img class="headshot" src="/images/sanJoshLogoTransperant.png" alt=""/>
+class navi extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+	componentDidMount () {}
+
+	render() {
+	
+		return (
+			<div className="navi">
+				<div class="nav-wrapper">
+					<div>
+						<a href="/">
+							<img class="headshot" src="/images/sanJoshLogoTransperant.png" alt=""/>
+						</a>
 				</div>
 
 				<div class="block">
-					<button class="block home-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE"><img class="home-pic" src="/images/07-512.png" alt=""/></button>
+					<Link to ="/">
+						<button class="block home-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE">
+							<img class="home-pic" src="/images/07-512.png" alt=""/>
+						</button>
+					</Link>
 				</div>
 
 				<div class="block about">
-				<button class="block about-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE"><img class="home-pic" src="/images/aboutIcon.png" alt=""/></button>
+					<Link to ="/about">	
+						<button class="block about-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE">
+							<img class="home-pic" src="/images/aboutIcon.png" alt=""/>
+						</button>
+					</Link>
 				</div>
 
 				<div class="block skills">
-				<button class="block skills-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE"><img class="home-pic" src="/images/skillsIcon.png" alt=""/></button>
+					<Link to ="/skills">	
+						<button class="block skills-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE">
+							<img class="home-pic" src="/images/skillsIcon.png" alt=""/>
+						</button>
+					</Link>
 				</div>
 
 				<div class="block myWork">
-				<button class="block myWork-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE"><img class="home-pic" src="/images/myWorkIcon.png" alt=""/></button>
+					<Link to ="/myWork">	
+						<button class="block myWork-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE">
+							<img class="home-pic" src="/images/myWorkIcon.png" alt=""/>
+						</button>
+					</Link>
 				</div>
 
 				<div class="block contact">
-				<button class="block contact-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE"><img class="home-pic" src="/images/whiteMailIcon.png" alt=""/></button>
+					<Link to ="/contact">	
+						<button class="block contact-button" type="button" data-hover="CLICK ME" data-active="I'M ACTIVE">
+							<img class="home-pic" src="/images/whiteMailIcon.png" alt=""/>
+						</button>
+					</Link>
 				</div>
 
 				<div class="socialMediaIconsDiv">
@@ -37,7 +71,8 @@ const navi = () => {
 
 			</div>
 		</div>
-	)
-};
+		)
+	};
+}
 
 export default navi;

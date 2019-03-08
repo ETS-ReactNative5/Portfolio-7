@@ -219,3 +219,21 @@ h1.ml8 {
   margin-left: 62.5vw;
   margin-top: 14vh;
 }
+
+.ml16 {
+  color: #ffffff;
+  padding: 40px 0;
+  font-weight: 800;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  overflow: hidden;
+  text-shadow: 0px 2px 2px #57ee31;
+  margin-left: 65vw;
+  margin-top: 45vh;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
