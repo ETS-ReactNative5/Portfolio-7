@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  margin-top: -2vh;
+  margin-top: -3.475vh;
   /* background-color: #252626; */
   min-height: 100vh;
   color: rgb(204, 255, 211)
@@ -19,6 +19,8 @@
 .home {
   background-image: url('/images/headshotB&W.png');
   background-size: cover;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /** --- TYPOGRAPHY --- **/
@@ -116,35 +118,104 @@ h1 {
 .home-content {
   background-image: url('/images/headshotB&W.png');
   background-size: cover;
-  height: 101vh;
+  height: 100vh;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Khula:700);
-body {
-  background: #111;
+
+/* ------------------------------ */
+.ml12 {
+  font-weight: 1000;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: #ffffff;
+  background-color: #00000060;
+  border-radius: 1.25vw;
+  width: 50vw;
+  margin-left: 49.5vw;
+  text-shadow: 0px 2px 2px #57ee31;
+  box-shadow: 0px 7.5px 7.5px #11f930a8;
 }
-.hidden {
-  opacity:0;
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
-.console-container {
- 
-  font-family:Khula;
-  font-size:4em;
-  text-align:center;
-  height:200px;
-  width:600px;
-  display:block;
-  position:absolute;
-  color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
+
+h1.ml8 {
+  font-weight: 900;
+  font-size: 4.5em;
+  color: #11f930;
+  width: 5em;
+  height: 5em;
 }
-.console-underscore {
-   display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
+
+
+.ml8 .letters-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 1em;
+}
+
+.ml8 .letters {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  line-height: 0.7em;
+  right: -0.12em;
+  top: -0.2em;
+}
+
+.ml8 .bang {
+  font-size: 1.4em;
+  top: auto;
+  left: -0.06em;
+}
+
+.ml8 .circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: 50vw;
+  top: 0;
+  bottom: 0;
+}
+
+.ml8 .circle-white {
+  width: 3em;
+  height: 3em;
+  border: 2px dashed white;
+  border-radius: 2em;
+  margin-left: 75vw;
+  margin-top: 52.5vh;
+}
+
+.ml8 .circle-dark {
+  width: 2.2em;
+  height: 2.2em;
+  background-color: #18181883;
+  border-radius: 3em;
+  z-index: 1;
+  margin-left: 77vw;
+  margin-top: 55vh;
+}
+
+.ml8 .circle-dark-dashed {
+  border-radius: 2.4em;
+  background-color: transparent;
+  border: 2px dashed #11f930;
+  width: 2.3em;
+  height: 2.3em;
+  margin-left: 26.7vw;
+  margin-top: 54.5vh;
+}
+
+.msgme {
+  width: 5vw;
+  margin-left: 62.5vw;
+  margin-top: 14vh;
 }
