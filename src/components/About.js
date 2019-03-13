@@ -21,6 +21,7 @@ class about extends Component {
     <div className="about">
       
       <h1 className="about-header">About me</h1>
+      <p>I love to code!</p>
     
     </div>
     )
