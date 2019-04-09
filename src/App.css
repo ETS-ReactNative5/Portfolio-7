@@ -401,7 +401,17 @@ img {
 }
 
 .skills-page {
-  height: 100vh;
+  height: 106vh;
   background: #242323;
 	color: #00b300;
+}
+
+.skillsContent {
+  width: 40vw;
+  padding-left: 5vw;
+  padding-top: 15vw;
+}
+
+.white {
+  color: white;
 }
