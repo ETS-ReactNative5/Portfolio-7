@@ -666,3 +666,12 @@ img {
 .reactname {
   text-shadow: 3px 3px 3px #61dbfb;
 }
+
+.myWorkPage {
+  background: #232222;
+  height: 100vh;
+}
+
+.myWork-header {
+  color: #00b300;
+}

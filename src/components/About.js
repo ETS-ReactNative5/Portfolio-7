@@ -28,6 +28,7 @@ class about extends Component {
       </div>
 	    <div id="wrapper">
 		<div id="image">
+
 			<div className="image i1"><img className="portfolioImg" src="/images/fishing.png"/></div>
 			<div className="image i2"><img className="portfolioImg" src="/images/cityCoding.png"/></div>
 			<div className="image i3"><img className="portfolioImg" src="/images/caliTank.png"/></div>

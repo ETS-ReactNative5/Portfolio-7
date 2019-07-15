@@ -18,9 +18,11 @@ class myWork extends Component {
 
   render() {
     return (
-    <div className="myWork">
+    <div className="myWorkPage">
     
       <h1 className="myWork-header">myWork</h1>
+
+      
     
     </div>
     )
