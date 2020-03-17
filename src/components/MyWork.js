@@ -14,17 +14,33 @@ class myWork extends Component {
     this.state = {};
   }
 
-  componentDidMount () {}
+  componentDidMount () {
+    
+    
+
+
+
+
+
+  }
 
   render() {
     return (
     <div className="myWorkPage">
     
-      <h1 className="myWork-header">myWork</h1>
+      <h1 className="myWork-header">Websites I've done</h1>
 
-      
-    
-    </div>
+      <div className="projectCards">
+   
+      <button><img className="projectimg" src="/images/BrainBallTrivia.png" alt="BrainBallTrivia" onClick={this.myfunction} /></button>
+      <button><img className="projectimg" src="/images/OceanSideKick.png" alt="OceanSideKick" onClick={this.myfunction} /></button>
+      <button><img className="projectimg" src="/images/CoDropPoster.png" alt="CoDropPoster" onClick={this.myfunction} /></button>
+
+      </div>
+
+
+
+      </div>
     )
   }
 }

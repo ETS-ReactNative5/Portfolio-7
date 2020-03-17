@@ -675,3 +675,25 @@ img {
 .myWork-header {
   color: #00b300;
 }
+
+.projectCard {
+  height: 25vh;
+  width: 10vw;
+  margin: 1vw;
+}
+
+.projectimg {
+  width: 20vw;
+}
+
+.projectCards > button {
+  background-color: #00b300;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 3vh;
+}
+
+.projectCards {
+  display: flex;
+  justify-content: space-around;
+}
